@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040589520191",
+    "project_id": "kitui-water-finder",
+    "storage_bucket": "kitui-water-finder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040589520191:android:9652148c4ee756f023278a",
+        "android_client_info": {
+          "package_name": "com.example.kituiwaterfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1y8n4ZS_WKMiW0zR0D7-cq3u8esgmEFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
