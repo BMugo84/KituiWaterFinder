@@ -9,6 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.kituiwaterfinder.navigation.NavGraph
+import com.example.kituiwaterfinder.ui.theme.KituiWaterFinderTheme
 import com.example.kituiwaterfinder.viewmodel.WaterSourceViewModel
 
 class MainActivity : ComponentActivity() {
@@ -16,15 +17,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MaterialTheme {
+            // Use our custom theme instead of default MaterialTheme
+            KituiWaterFinderTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    // Create one shared ViewModel for the whole app
                     val viewModel: WaterSourceViewModel = viewModel()
-
-                    // Start navigation
                     NavGraph(viewModel = viewModel)
                 }
             }
